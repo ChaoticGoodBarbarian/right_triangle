@@ -1,7 +1,3 @@
-Понял, вот просто корректный английский перевод в виде обычного текстового файла, без Markdown-оформления:
-
----
-
 Right Triangle
 Time limit: 1 second
 Memory limit: 64.0 MB
