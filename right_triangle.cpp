@@ -1,16 +1,24 @@
 #include <iostream>
 
 int main() {
-	int num1, num2, num3;
-	std::cin >> num1 >> num2 >> num3;
+	int a, b, c;
+	std::cin >> a >> b >> c;
 
-	if ((num3 * num3 == (num1 * num1) + (num2 * num2)) ||
-		(num2 * num2 == (num1 * num1) + (num3 * num3)) ||
-		(num1 * num1 == (num2 * num2) + (num3 * num3))) {
-		std::cout << "YES";
+	if (
+		a + b <= c ||
+		a + c <= b ||
+		b + c <= a
+		) {
+		std::cout << "UNDEFINED\n";
+	}
+	else if (
+		a * a + b * b == c * c ||
+		a * a + c * c == b * b ||
+		b * b + c * c == a * a
+		) {
+		std::cout << "YES\n";
 	}
 	else {
-		std::cout << "NO";
+		std::cout << "NO\n";
 	}
-	return 0;
 }
